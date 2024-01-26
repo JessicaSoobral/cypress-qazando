@@ -9,14 +9,14 @@ jobs:
  # o que será feito nessa pipeline
  # só teremos um job: rodar os testes
   cypress-run:
-    #maquina que será executado
+    # maquina que será executado
     runs-on: ubuntu-latest
 
-    #passo a passo para rodar os testes
+    # passo a passo para rodar os testes
     steps: 
     # clone do projeto
-     - name: Checkout/Clone do projeto
-       uses: actions/checkout@v3
+      - name: Checkout/Clone do projeto
+        uses: actions/checkout@v3
 
     # execução e configuração do nosso projeto
       - name: Cypress run
@@ -27,6 +27,5 @@ jobs:
           CYPRESS_RECORD_KEY: ${{secret.CYPRESS_RECORD_KEY}}
           
     # exemplo de execução no terminal
-    - name: instalar depedencias do projeto
-      run: echo Jessica
-
+      - name: instalar depedencias do projeto
+        run: echo Jessica
