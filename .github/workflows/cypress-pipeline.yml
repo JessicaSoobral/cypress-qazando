@@ -26,6 +26,3 @@ jobs:
         env: 
           CYPRESS_RECORD_KEY: ${{secret.CYPRESS_RECORD_KEY}}
           
-    # exemplo de execução no terminal
-      - name: instalar depedencias do projeto
-        run: echo Jessica
